@@ -4,14 +4,18 @@
 
 You can edit `config/serverconfig.txt` and rebuild the image or pass the
 following environment variables:
-* TERRARIA_PORT (sets port=...)
+* TERRARIA_WORLD (sets world=..., default is `/terraria/world/myworld.wld`)
+* TERRARIA_PORT (sets port=..., default `7777`)
 * TERRARIA_PW (sets password=...)
 * TERRARIA_MOTD (sets motd=...)
-* TERRARIA_PLAYERNUM (sets maxplayers=...)
+* TERRARIA_PLAYERNUM (sets maxplayers=..., default is `8`)
 * TERRARIA_ARGS (additional arguments to the server binary)
 
 In addition you should create a mountpoint at `/terraria/world` to mount your
 worlds in from the host. Alternatively make it a data volume.
+
+If you don't have a world already a new one will be created at
+`/terraria/world/Terraria.wld`.
 
 ## Starting
 
