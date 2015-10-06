@@ -22,7 +22,7 @@ If you don't have a world already a new one will be created at
 Starting the server could look like this:
 
 ```sh
-docker run -ti \
+docker run -ti -d \
 	--name=terraria \
 	-p 7777:7777 \
 	-v <host-location-to-terraria-worlds>:/terraria/world \
