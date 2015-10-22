@@ -31,6 +31,13 @@ docker run -ti -d \
 	hasufell/gentoo-terraria-server
 ```
 
+## Stopping
+
+Terraria server doesn't handle signals properly and our tmux doesn't
+propagate them anyway, so if you want to stop the server, you have to
+[access the interactive console](#accessing-the-interactive-server-console)
+and make sure the server exits properly while saving the current world state.
+
 ## Accessing the interactive server console
 
 The server is started via tmux. Because docker doesn't work well with tmux,
