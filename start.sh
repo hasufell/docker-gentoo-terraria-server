@@ -32,7 +32,7 @@ fi
 
 cd /terraria/terraria-server-linux-${PV}
 
-sudo -u terraria \
+exec sudo -u terraria \
 	./TerrariaServer.bin.x86_64 \
 	-config /terraria/serverconfig.txt \
 	${TERRARIA_ARGS}

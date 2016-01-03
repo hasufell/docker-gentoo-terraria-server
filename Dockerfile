@@ -43,4 +43,4 @@ EXPOSE 7777
 COPY start.sh /
 RUN chmod +x /start.sh
 
-CMD tmux new-session -s terraria /start.sh
+CMD exec tmux new-session -s terraria /start.sh
